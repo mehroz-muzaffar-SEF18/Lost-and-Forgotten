@@ -1,5 +1,6 @@
 {
     "places": ["island", "jungle", "house"],
-    "interactables": ["door", "window", "drawer", "lamp", "telephone", "mirror"],
-    "pickables": ["key", "first aid kit", "flashlight"]
+    "interactables": ["door", "window", "drawer", "lamp", "telephone", "mirror", "picture"],
+    "pickables": ["key", "first aid kit", "flashlight"],
+    "enemies": ["hyenas"]
 }
