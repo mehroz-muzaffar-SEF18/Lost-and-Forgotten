@@ -3,12 +3,23 @@
 	"begining": "An unconscious man lying on the shore of ocean. A mighty wave hit him and his senses are back. His eyes are blurred and feeling pain in body, unfortunately he has lost his memories. \"Who I'm?\" Why I'm here?\" \"What's going on? I've nothing in my mind.\"",
 	"look_around": {
 		"Island": "A big ocean with giant waves. This place is seems like an Island. A dense jungle in front of him. Weather is stormy and there is heavy rain. \"It seems like I've visited here before.\"",
-		"Jungle": "A dense jungle having big trees, two hyenas attacked him, after a wild fight man killed both hyenas and got some wounds on his arms. \"Why I'm so skillful? I killed hyenas within no time. What was my profession? ahhh! how I've lost my memories?\" After walking some distance, he noticed something. There is a small house. He rush towards it.",
-		"House": "This house is looking old. There is a stained window on left side and a wooden door at center."
+		"Jungle": "A dense jungle having big trees, two hyenas attacked him, after a wild fight man killed both hyenas and got some wounds on his arms. \"Why I'm so skillful? I killed hyenas within no time. What was my profession? ahhh! how I've lost my memories?\" After walking some distance, he noticed something. There is a small house. He rush towards it. This house is looking old. There is a stained window on left side and a wooden door at center.",
+		"House": "There is a dressing table on right side with oval mirror and on left side there is a bed with side table having drawer and lamp on it, there is also a telephone on side table. A big picute is hanging on a wall. It's a family picture with husband, wife and two kids. Luckily there is a First Aid Kit on dressing table."
 	},
-	"walk_into": { "Jungle": "write here", "House": "write here" },
-	"iteract": {
+	"walk_into": {
+		"Jungle": "Man is walking towards jungle through sand and rocks. \"This place is looking familiar. I don't know why?\"",
+		"House": "He enter into house without creating noise. There are many things in his surroundings."
+	},
+	"interact": {
 		"window": "He can't see anything through this window its covered with stains, try something else.",
-		"door": "He knock the door slowly, but no response, he knocked it again with hard hands. Door opens a bit with force of his knocking,it seems house is filled with things and there is no one inside."
+		"door": "He knock the door slowly, but no response, he knocked it again with hard hands. Door opens a bit with force of his knocking,it seems house is filled with things and there is no one inside.",
+		"mirror": "\nAhh! it's me in that picture, it means I've some connection with this house.\" Man has some scratches on his forehead and there is something written there. It's ?dam, oh there is something missing in this word.",
+		"drawer": "He opens the drawer and there are keys, following letters [D,A,M,A], a phone number and a flashlight",
+		"picture": "It's a family picture with husband,wife and two kids.",
+		"telephone": "\"I should check the number I found from drawer, maybe I get some clue.\" Man is dialing that number... Ringing... Call Attended, Anonymous:\"asdfghj\" Man:\"I can't understand what are you saying?\" Anonymous:\"asdfghj\" Man:\"Please stop saying this.\" Man drop the phone and start shouting he is getting severe pain in his head, it seems that man is getting some flashbacks of his past, maybe he is remembering something from his past.",
+		"first_aid_kit": "Man is in severe pain due to wounds, he uses First_Aid_Kit, now he is feeling better.",
+		"bed": "Man is too much tired. It's time to do some rest, room is getting dark due to evening, so man turn on the lamp. \"What is this? I heared sound of something.\" Man get up from bed he was surprised after seeing a opened door at floor. It means lamp worked as a basement door button.",
+		"letters": "\"Which meaningful word will be constructed from following letters [D,A,M,A]? Let's think about it.\"",
+		"basement_door": "It's dark, man can't see anything, it is a right time of using flashlight, man turn on flashlight and go into basement. \"Oh My God! what is this?\" To Be Continue..."
 	}
 }
