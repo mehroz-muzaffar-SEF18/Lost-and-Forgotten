@@ -3,15 +3,12 @@
 	"begining": "An unconscious man lying on the shore of ocean. A mighty wave hit him and his senses are back. His eyes are blurred and feeling pain in body, unfortunately he has lost his memories. \"Who I'm?\" Why I'm here?\" \"What's going on? I've nothing in my mind.\"",
 	"look_around": {
 		"Island": "A big ocean with giant waves. This place is seems like an Island. A dense jungle in front of him. Weather is stormy and there is heavy rain. \"It seems like I've visited here before.\"",
-		"Jungle": "A dense jUnGle having big trees, two hyenas attacked him, after a wild fight man killed both hyenas and got some wounds on his arms. \"Why I'm so skillful? I killed hyenas within no time. What was my profession? ahhh! how I've lost my memories?\" After walking some distance, he noticed something. There is a small house. He rush towards it.",
+		"Jungle": "A dense jungle having big trees, two hyenas attacked him, after a wild fight man killed both hyenas and got some wounds on his arms. \"Why I'm so skillful? I killed hyenas within no time. What was my profession? ahhh! how I've lost my memories?\" After walking some distance, he noticed something. There is a small house. He rush towards it.",
 		"House": "This house is looking old. There is a stained window on left side and a wooden door at center."
 	},
 	"walk_into": { "Jungle": "write here", "House": "write here" },
 	"iteract": {
 		"window": "He can't see anything through this window its covered with stains, try something else.",
 		"door": "He knock the door slowly, but no response, he knocked it again with hard hands. Door opens a bit with force of his knocking,it seems house is filled with things and there is no one inside."
-	},
-	"quit": "Good Bye!",
-	"invalid_command": "I didn't understand what you are trying to say. Please try again!",
-	"invalid_object": "The entered object name does not seems to be a valid object (such as place, interactable, pickable)."
+	}
 }
