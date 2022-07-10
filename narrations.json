@@ -1,0 +1,10 @@
+{
+	"collected_items": [],
+	"begining": "An unconscious man lying on the shore of ocean. A mighty wave hit him and his senses are back. His eyes are blurred and feeling pain in body and unfortunately he has lost his memories. \"Who I'm?\" Why I'm here?\" \"What's going on? I've nothing in my mind.\"",
+	"look_around": {
+		"Island": "A big ocean in his back with giant waves. This place is seems like an Island.A big and dense jungle in front of him. Weather is stormy and there is heavy rain.",
+		"Jungle": "A dense jungle having big trees, two hyenas attacked him, after a wild fight man killed both hyenas and got some scratches on his arms",
+		"House": "write here"
+	},
+	"walk_into": { "Jungle": "write here", "House": "write here" }
+}
