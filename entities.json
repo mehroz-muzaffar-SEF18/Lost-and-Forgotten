@@ -1,0 +1,5 @@
+{
+    "places": ["island", "jungle", "house"],
+    "interactables": ["door", "window", "drawer", "lamp", "telephone", "mirror"],
+    "pickables": ["key", "first aid kit", "flashlight"]
+}
