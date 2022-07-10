@@ -21,5 +21,8 @@
 		"bed": "Man is too much tired. It's time to do some rest, room is getting dark due to evening, so man turn on the lamp. \"What is this? I heared sound of something.\" Man get up from bed he was surprised after seeing a opened door at floor. It means lamp worked as a basement door button.",
 		"letters": "\"Which meaningful word will be constructed from following letters [D,A,M,A]? Let's think about it.\"",
 		"basement_door": "It's dark, man can't see anything, it is a right time of using flashlight, man turn on flashlight and go into basement. \"Oh My God! what is this?\" To Be Continue..."
-	}
+	},
+	"quit": "Good Bye!",
+	"invalid_command": "I didn't understand what you are trying to say. Please try again!",
+	"invalid_object": "The entered object name does not seems to be a valid object (such as place, interactable, pickable)."
 }
