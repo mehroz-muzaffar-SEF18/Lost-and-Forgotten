@@ -1,8 +1,5 @@
 import json
-import string
 from time import sleep
-
-from numpy import true_divide
 import re
 
 global settings
@@ -11,9 +8,26 @@ global entities
 entities={"Null":"Null"}
 global narrations
 narrations={"Null":"Null"}
+global visible_entities
+visible_entities = []
 
 def print_c(character, char_separator='', sync_print=True):
     print(character, end=char_separator, flush=sync_print)
+
+def display_intro():
+    prefix = "\033["
+    end = f"{prefix}0m"
+    red= f"{prefix}31m"#red
+    yellow = f"{prefix}33m"#yellow
+    cyan = f"{prefix}36m"#cyan
+    green = f"{prefix}32m"#green
+    output_narration("Some info before you play the game:\n")
+    output_narration(f"1. There are four kinds of entities in this game: {yellow}places{end} shown in yellow, {cyan}interactables{end} shown in cyan, {green}usables{end} shown in green, {red}enemies{end} shown in red\n")
+    output_narration(f"2. Syntax: COMMAND ENTITY_NAME\n")
+    output_narration(f"3. Commands for {yellow}places{end} are \"walk_into\" and \"look_around\"\n")
+    output_narration(f"4. Command for {cyan}interactables{end} is \"interact\"\n")
+    output_narration(f"5. Command for {green}usables{end} is \"use\"\n")
+    output_narration(f"6. There are no commands for {red}enemies{end}\n")
 
 def load_json_data_from_file(path):
     json_data_file = open(path)
@@ -44,12 +58,14 @@ def update_settings():
     settings_file.close()
 
 def color_all_entities_in_narration(narration_text:str):
+    global visible_entities
     entities_array=[]
     for category in entities.keys():
         entities_array+=entities[category]
     for entity in entities_array:
         narration_text = re.sub(entity, color_entity_text(entity), narration_text, flags=re.IGNORECASE)
-        # narration_text=narration_text.replace(entity, color_entity_text(entity))
+        if narration_text.find(entity) != -1:
+            visible_entities.append(entity)
     return narration_text
 
 def output_narration(narration_text):
@@ -75,7 +91,7 @@ def color_entity_text(item_name):
         "enemies": "31m",#red
         "places": "33m",#yellow
         "interactables": "36m",#cyan
-        "pickables": "32m"#green
+        "usables": "32m"#green
     }
     for category in entities.keys():
         if item_name in entities[category]:
@@ -83,3 +99,8 @@ def color_entity_text(item_name):
             return color_prefix+item_name+reset
     return item_name
 
+def entity_type(entity_name):
+    for category in entities.keys():
+        if entity_name in entities[category]:
+            return category
+    return "None"

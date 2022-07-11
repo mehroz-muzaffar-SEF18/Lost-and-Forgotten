@@ -1,28 +1,91 @@
 {
-	"collected_items": [],
-	"begining": "An unconscious man lying on the shore of ocean. A mighty wave hit him and his senses are back. His eyes are blurred and feeling pain in body, unfortunately he has lost his memories. \"Who I'm?\" Why I'm here?\" \"What's going on? I've nothing in my mind.\"",
+	"beginning": "A man was lying unconscious on the bank of a sea. A mighty wave of ocean hits him and he regains his consciousness. His vision is not clear right now and is feeling pain in whole body. \"Where am I? Who am I? Why am I here? What's going on?\", he thinks to himself. It seems like he has lost his memories. When his vision gets clear he finds himself at an isolated island.",
 	"look_around": {
-		"Island": "A big ocean with giant waves. This place is seems like an Island. A dense jungle in front of him. Weather is stormy and there is heavy rain. \"It seems like I've visited here before.\"",
-		"Jungle": "A dense jungle having big trees, two hyenas attacked him, after a wild fight man killed both hyenas and got some wounds on his arms. \"Why I'm so skillful? I killed hyenas within no time. What was my profession? ahhh! how I've lost my memories?\" After walking some distance, he noticed something. There is a small house. He rush towards it. This house is looking old. There is a stained window on left side and a wooden door at center.",
-		"House": "There is a dressing table on right side with oval mirror and on left side there is a bed with side table having drawer and lamp on it, there is also a telephone on side table. A big picute is hanging on a wall. It's a family picture with husband, wife and two kids. Luckily there is a First Aid Kit on dressing table."
+		"island": [
+			"A big ocean with giant waves on his back. A dense jungle in front of him. Weather is stormy and there is heavy rain. \"It seems like I've visited this place before.\", he thinks to himself"
+		],
+		"jungle": [
+			"A dense jungle having big trees, two hyenas attacked him, after a wild fight man killed both hyenas and got some wounds on his arms. \"How I'm so skillful? I killed hyenas within no time. What was my profession? ahhh! how I've lost my memories?\" After walking some distance, he noticed something. There is a small house. He rush towards it. This house is looking old. There is a stained window on left side and a wooden door at center."
+		],
+		"house": [
+			"There is a dressing table on right side with oval mirror and on left side there is a bed with side table having drawer and lamp on it, there is also a telephone on side table. A big picture is hanging on a wall. It's a family picture with husband, wife and two kids. Luckily there is a First Aid Kit on dressing table."
+		],
+		"error": [
+			"You are not in the %s yet..."
+		]
 	},
 	"walk_into": {
-		"Jungle": "Man is walking towards jungle through sand and rocks. \"This place is looking familiar. I don't know why?\"",
-		"House": "He enter into house without creating noise. There are many things in his surroundings."
+		"island": [
+			"Can't go back to the shore right now. It is raining too heavily."
+		],
+		"jungle": [
+			"He starts walking towards the jungle through sand and rocks. \"This place is looking familiar. I don't know why?\", he thinks to himself"
+		],
+		"house": [
+			"He quietly enters house. There are many things in his surroundings."
+		],
+		"error": [
+			"You are already in %s.",
+			"Can't go back into %s yet. It is raining heavily outside."
+		]
 	},
 	"interact": {
-		"window": "He can't see anything through this window its covered with stains, try something else.",
-		"door": "He knock the door slowly, but no response, he knocked it again with hard hands. Door opens a bit with force of his knocking,it seems house is filled with things and there is no one inside.",
-		"mirror": "\nAhh! it's me in that picture, it means I've some connection with this house.\" Man has some scratches on his forehead and there is something written there. It's ?dam, oh there is something missing in this word.",
-		"drawer": "He opens the drawer and there are keys, following letters [D,A,M,A], a phone number and a flashlight",
-		"picture": "It's a family picture with husband,wife and two kids.",
-		"telephone": "\"I should check the number I found from drawer, maybe I get some clue.\" Man is dialing that number... Ringing... Call Attended, Anonymous:\"asdfghj\" Man:\"I can't understand what are you saying?\" Anonymous:\"asdfghj\" Man:\"Please stop saying this.\" Man drop the phone and start shouting he is getting severe pain in his head, it seems that man is getting some flashbacks of his past, maybe he is remembering something from his past.",
-		"first_aid_kit": "Man is in severe pain due to wounds, he uses First_Aid_Kit, now he is feeling better.",
-		"bed": "Man is too much tired. It's time to do some rest, room is getting dark due to evening, so man turn on the lamp. \"What is this? I heared sound of something.\" Man get up from bed he was surprised after seeing a opened door at floor. It means lamp worked as a basement door button.",
-		"letters": "\"Which meaningful word will be constructed from following letters [D,A,M,A]? Let's think about it.\"",
-		"basement_door": "It's dark, man can't see anything, it is a right time of using flashlight, man turn on flashlight and go into basement. \"Oh My God! what is this?\" To Be Continue..."
+		"window": [
+			"He can't see anything through the window its covered with dirt and stain, try something else."
+		],
+		"door": [
+			"He knocks at the door slowly, but no response, he knocked it again harder. Door opens a bit with force of his knocking, it seems house is filled with things and there is no one inside.",
+			"He sees the door and the door is a bit open, giving a sneak peek of the inside of house.",
+			"\"The door is closed right now!\", he says"
+		],
+		"mirror": [
+			"He sees his reflection in the mirror and notices some scratches on his forehead and there is something written there. It's spelled as _ D A M, seems like there is something missing in this word. He says, \"What is this written on my forehead? Is it a name? What could it mean?\"",
+			"\"So, I am the person in that picture, it means I've some connection with this house.\", he says to himself. He has some scratches on his forehead and there is something written there. It's spelled as _ D A M, seems like there is something missing in this word. He says, \"What is this written on my forehead? Is it a name? What could it mean?\"",
+			"He looks at his reflection in the mirror and wonders what that word written on his forehead could mean."
+		],
+		"drawer": [
+			"He opens the drawer and there are keys, a phone number written on a card, a flashlight and four cards each having letters of D, A, A, M respectively. He picks up the flashlight and the keys.",
+			"He opens the drawer, looks at the letters and wonders what could these mean."
+		],
+		"picture": [
+			"It's a picture of a man standing with a woman and two kids. \"Who are these people?\", he asks himself",
+			"As he sees the picture, he says, \"So, this is me in this picture, but who are the woman and the kids standing with me.\"",
+			"He looks at the picture and wonders who are the woman and the kids standing with him are."
+		],
+		"telephone": [
+			"\"I should check the number I found from drawer, maybe I get some clue.\" Man is dialing that number... Ringing... Call Attended, Anonymous:\"asdfghj\" Him:\"I can't understand what are you saying?\" Anonymous:\"asdfghj\" Him:\"Please stop saying this.\" He drops the phone and start shouting he is getting severe pain in his head, it seems that he is getting some flashbacks of his past, maybe he is remembering something from his past.",
+			"He tries to dial same number on the telephone but does not receive any response."
+		],
+		"bed": [
+			"He is too much tired. It's time to do some rest, room is getting dark due to evening, so he turns off the lamp. \"What is this? I heared sound of something.\" He gets up from bed in surprise and notices there is darkness everywhere.",
+			"\"No time to rest right now!\", he says"
+		],
+		"four cards": [
+			"\"He places all four cards on the drawer and tries to arrange them and suddenly it clicks in his mind that these four cards are of the letters engraved on his forehead. Then he comes to know that the word was actually \"ADAM\". Seems like someone's name.\""
+		],
+		"basement door": [
+			"This door is locked. Need a key."
+		],
+		"first aid kit": [
+			"He is in severe pain due to wounds, he uses first aid kit, now he is feeling better."
+		],
+		"lamp": [
+			"\"Its a lamp\", he says."
+		]
 	},
-	"quit": "Good Bye!",
+	"use": {
+		"flashlight": [
+			"He turns on flashlight and sees a door at the floor opened with a staircase under it. He starts going down the staircase and then notices a basement door locked."
+		],
+		"keys": [
+			"He uses the keys to open up the basement door. When the door opens he jumps back with surprise and asks himself, \"What is all this?\"\nTO BE CONTINUED..."
+		]
+	},
+	"quit": "Exiting Game...",
 	"invalid_command": "I didn't understand what you are trying to say. Please try again!",
-	"invalid_object": "The entered object name does not seems to be a valid object (such as place, interactable, pickable)."
+	"invalid_timing": "Not possible to do so right now. Try something else!",
+	"invalid_object": [
+		"Can't do \"%s\" on a/an %s entity.",
+		"The %s does not seems to be a valid entity such as a place, interactable or usable item."
+	]
 }
